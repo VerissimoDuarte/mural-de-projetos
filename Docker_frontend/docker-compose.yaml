@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  
+  frontend:
+    container_name: frontend
+
+    build: .
+
+    ports:
+      - 80:3001
+
+    command: "serve -s build -l 3001"
+
+
+
+
